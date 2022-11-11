@@ -3,7 +3,7 @@ pipeline {
     stages{
         stage ("cloning ..."){
             steps{
-                echo "exec"
+                sh 'git clone https://github.com/jehoshu/JenkinsGit.git'
             }
         } 
         stage ("building ..."){
