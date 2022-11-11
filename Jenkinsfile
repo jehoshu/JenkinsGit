@@ -16,10 +16,5 @@ pipeline {
                 echo "exec"
             }
         }       
-        stage ("deploying ..."){
-            steps{
-                echo "exec"
-            }
-        }       
     }
 }
