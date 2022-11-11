@@ -3,7 +3,7 @@ pipeline {
     stages{
         stage ("cloning ..."){
             steps{
-                checkout checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/jehoshu/JenkinsGit']]])
+                checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/jehoshu/JenkinsGit']]])
             }
         } 
         stage ("building ..."){
